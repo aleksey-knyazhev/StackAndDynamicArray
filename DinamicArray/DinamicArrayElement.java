@@ -1,20 +1,21 @@
-public class ExtendableArrayElement {
-    public String value = null;
-    public ExtendableArrayElement next = null;
+public class DinamicArrayElement {
+    public Object value = null;
+    public DinamicArrayElement next = null;
+    public DinamicArrayElement previous = null;
 
     public void setValue(String value) {
         this.value = value;
     }
 
-    public void setNext(ExtendableArrayElement next) {
+    public void setNext(DinamicArrayElement next) {
         this.next = next;
     }
 
-    public String getValue() {
+    public Object getValue() {
         return value;
     }
 
-    public ExtendableArrayElement getNext() {
+    public DinamicArrayElement getNext() {
         return next;
     }
 }

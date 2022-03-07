@@ -1,6 +1,6 @@
-public class ExtendableArrayTest {
+public class DinamicArrayTest {
     public static void main(String[] args) {
-        ExtendableArray stack = new ExtendableArray();
+        DinamicArray stack = new DinamicArray();
         System.out.println(stack.empty());
         stack.push("test1");
         stack.push("test2");

@@ -1,2 +1,3 @@
 # HomeWork
-## ExtendableArray
+## Stack
+## DinamicArray

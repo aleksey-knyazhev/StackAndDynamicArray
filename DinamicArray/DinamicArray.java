@@ -1,12 +1,12 @@
-public class ExtendableArray {
-    private ExtendableArrayElement topElement = null;
+public class DinamicArray {
+    private DinamicArrayElement topElement = null;
 
     public boolean empty() {
         return topElement == null; // Почему equals не отработало, в данном случае?
     }
 
     public void push(String value) {
-        ExtendableArrayElement newElement = new ExtendableArrayElement();
+        DinamicArrayElement newElement = new DinamicArrayElement();
         newElement.value = value;
         if (empty()) {
             topElement = newElement;
@@ -16,11 +16,11 @@ public class ExtendableArray {
         topElement = newElement;
     }
 
-    public String pop() {
+    public Object pop() {
         if (empty())
             return null;
 
-        String result = topElement.value;
+        Object result = topElement.value;
         topElement = topElement.next;
         return result;
     }
