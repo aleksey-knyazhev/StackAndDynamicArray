@@ -1,12 +1,12 @@
-public class Element {
+public class StackElement {
     public String value = null;
-    public Element next = null;
+    public StackElement next = null;
 
     public void setValue(String value) {
         this.value = value;
     }
 
-    public void setNext(Element next) {
+    public void setNext(StackElement next) {
         this.next = next;
     }
 
@@ -14,7 +14,7 @@ public class Element {
         return value;
     }
 
-    public Element getNext() {
+    public StackElement getNext() {
         return next;
     }
 }

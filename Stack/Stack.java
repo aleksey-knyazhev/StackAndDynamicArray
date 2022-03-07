@@ -1,12 +1,12 @@
 public class Stack {
-    private Element topElement = null;
+    private StackElement topElement = null;
 
     public boolean empty() {
         return topElement == null; // Почему equals не отработало, в данном случае?
     }
 
     public void push(String value) {
-        Element newElement = new Element();
+        StackElement newElement = new StackElement();
         newElement.value = value;
         if (empty()) {
             topElement = newElement;
