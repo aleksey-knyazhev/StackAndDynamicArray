@@ -1,4 +1,4 @@
-public class DinamicArrayTest {
+public class DynamicArrayTest {
     public static void main(String[] args) {
         DynamicArray stack = new DynamicArray();
         System.out.println(stack.empty());
