@@ -1,12 +1,12 @@
-public class DinamicArray {
-    private DinamicArrayElement topElement = null;
+public class DynamicArray {
+    private DynamicArrayElement topElement = null;
 
     public boolean empty() {
-        return topElement == null; // Почему equals не отработало, в данном случае?
+        return topElement == null;
     }
 
     public void push(String value) {
-        DinamicArrayElement newElement = new DinamicArrayElement();
+        DynamicArrayElement newElement = new DynamicArrayElement();
         newElement.value = value;
         if (empty()) {
             topElement = newElement;

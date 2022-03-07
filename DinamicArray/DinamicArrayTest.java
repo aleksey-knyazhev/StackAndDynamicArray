@@ -1,6 +1,6 @@
 public class DinamicArrayTest {
     public static void main(String[] args) {
-        DinamicArray stack = new DinamicArray();
+        DynamicArray stack = new DynamicArray();
         System.out.println(stack.empty());
         stack.push("test1");
         stack.push("test2");
