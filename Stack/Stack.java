@@ -2,7 +2,7 @@ public class Stack {
     private Element topElement = null;
 
     public boolean empty() {
-        return topElement == null;
+        return topElement == null; // Почему equals не отработало, в данном случае?
     }
 
     public void push(String value) {
