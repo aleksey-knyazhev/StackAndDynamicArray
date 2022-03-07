@@ -2,7 +2,6 @@ public class Element {
     public String value = null;
     public Element next = null;
 
-
     public void setValue(String value) {
         this.value = value;
     }
