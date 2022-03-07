@@ -13,7 +13,6 @@ public class Stack {
             return;
         }
         newElement.next = topElement;
-        topElement.previous = newElement;
         topElement = newElement;
     }
 
@@ -23,8 +22,6 @@ public class Stack {
 
         String result = topElement.value;
         topElement = topElement.next;
-        if (!empty())
-            topElement.previous = null;
         return result;
     }
 }
