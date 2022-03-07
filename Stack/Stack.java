@@ -1,6 +1,7 @@
 public class Stack {
     private Element topElement = null;
 
+
     public boolean empty() {
         return topElement == null;
     }
