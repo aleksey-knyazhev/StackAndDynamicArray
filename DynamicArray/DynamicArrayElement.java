@@ -1,7 +1,11 @@
 public class DynamicArrayElement {
-    public Object value = null;
+    public String value;
     public DynamicArrayElement next = null;
-    public DynamicArrayElement previous = null;
+    //public DynamicArrayElement previous = null;
+
+    public DynamicArrayElement(String value) {
+        this.value = value;
+    }
 
     public void setValue(String value) {
         this.value = value;
@@ -11,11 +15,19 @@ public class DynamicArrayElement {
         this.next = next;
     }
 
-    public Object getValue() {
+    //public void setPrevious(DynamicArrayElement previous) {
+    //    this.previous = previous;
+    //}
+
+    public String getValue() {
         return value;
     }
 
     public DynamicArrayElement getNext() {
         return next;
     }
+
+    //public DynamicArrayElement getPrevious() {
+    //    return previous;
+    //}
 }
